@@ -267,4 +267,7 @@ void G_admin_duration( int secs, char *duration, int dursize );
 void G_admin_cleanup( void );
 void G_admin_namelog_cleanup( void );
 
+
+// Function add by Insomne
+qboolean G_admin_version( gentity_t *ent, int skiparg );
 #endif /* ifndef _G_ADMIN_H */

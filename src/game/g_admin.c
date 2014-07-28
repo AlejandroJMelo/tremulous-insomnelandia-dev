@@ -338,6 +338,9 @@ g_admin_cmd_t g_admin_cmds[ ] =
     {"time", G_admin_time, "time",
       "show the current local server time",
       ""},
+    {"version", G_admin_version, "version",
+      "show the version of the QVM more details in https://github.com/AlejandroJMelo/tremulous-insomnelandia-dev",
+      ""},  
 
     {"tklog", G_admin_tklog, "tklog",
       "list recent teamkill activity",
@@ -1767,6 +1770,12 @@ qboolean G_admin_time( gentity_t *ent, int skiparg )
 
   trap_RealTime( &qt );
   ADMP( va( "^3!time: ^7local time is %02i:%02i:%02i\n", qt.tm_hour, qt.tm_min, qt.tm_sec ) );
+  
+  return qtrue;
+}
+qboolean G_admin_version( gentity_t *ent, int skiparg )
+{
+  ADMP( va( "^3!version: ^7the current version of the QVM is 1.1.1\n") );
   
   return qtrue;
 }

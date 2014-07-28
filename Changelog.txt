@@ -1,2 +1,0 @@
-2014-07-27  Alejandro J. Melo (Insomne)  <alejandrojmelo@gmail.com>
-	* Add file changelog.txt
